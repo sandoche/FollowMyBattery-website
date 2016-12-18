@@ -1,0 +1,24 @@
+.header {
+
+    @extend .container;
+
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include e('logo') {
+
+    }
+
+    @include e('form') {
+
+    }
+
+    @include e('title') {
+
+    }
+
+    @include e('uvp') {
+
+    }
+}
