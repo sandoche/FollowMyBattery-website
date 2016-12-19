@@ -3,7 +3,7 @@
     @extend .container;
 
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
 
     @include e('logo') {
@@ -24,6 +24,6 @@
       @extend .col-sm-6;
       @extend .col-sm-offset-3;
 
-      margin-top: 50px;
+      margin-top: 20px;
     }
 }
