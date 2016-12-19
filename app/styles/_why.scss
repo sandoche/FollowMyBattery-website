@@ -50,6 +50,10 @@
     }
 
 
+    @include e('emoticon') {
+      font-size: $font-size-l;
+    }
+
     @include e('illustration') {
       @extend .center-block;
       height: 500px;

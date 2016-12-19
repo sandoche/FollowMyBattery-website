@@ -1,7 +1,14 @@
 .footer {
 
-    @include e('text') {
+    border-top: 1px solid $gray-lighter;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: $sans-serif-font;
 
+    @include e('text') {
+      text-align: center;
+      color: $gray-light;
+      font-size: $font-size-s;
     }
 
 }

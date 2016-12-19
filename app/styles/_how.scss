@@ -28,4 +28,8 @@
       margin-top: 20px;
     }
 
+    @include e('emoticon') {
+      font-size: $font-size-l;
+    }
+
 }
