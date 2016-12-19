@@ -12,12 +12,12 @@
 
     @include e('title') {
       font-family: $sans-serif-font;
-      font-size: 4.8rem;
+      font-size: $font-size-xl;
     }
 
     @include e('uvp') {
       font-family: $serif-font;
-      font-size: 2.6rem;
+      font-size: $font-size-l;
     }
 
     @include e('form') {

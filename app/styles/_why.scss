@@ -10,19 +10,49 @@
     }
 
     @include e('left') {
-      @extend .col-sm-6;
+      @extend .col-sm-5;
     }
 
     @include e('right') {
       @extend .col-sm-6;
     }
 
-    @include e('text') {
-      font-size: 2.4rem;
+    @include e('title') {
+      font-size: $font-size-xl;
+      font-family: $sans-serif-font;
+      text-align: center;
     }
 
+    @include e('separator') {
+      text-align: center;
+    }
+
+    @include e('text') {
+      font-size: $font-size-m;
+      font-family: $serif-font;
+      text-align: center;
+    }
+
+
+
+    @media (min-width: $screen-sm-min) {
+      @include e('title') {
+        text-align: left;
+      }
+
+      @include e('separator') {
+        text-align: left;
+      }
+
+      @include e('text') {
+        text-align: left;
+      }
+    }
+
+
     @include e('illustration') {
-      height: 400px;
+      @extend .center-block;
+      height: 500px;
     }
 
 }
