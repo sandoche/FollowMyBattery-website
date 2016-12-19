@@ -4,6 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
+const ghPages = require('gulp-gh-pages');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -167,6 +168,11 @@ gulp.task('wiredep', () => {
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['clean'], () => {
