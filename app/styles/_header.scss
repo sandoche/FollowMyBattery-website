@@ -18,6 +18,7 @@
     @include e('uvp') {
       font-family: $serif-font;
       font-size: $font-size-l;
+      line-height: 1.7;
     }
 
     @include e('form') {
