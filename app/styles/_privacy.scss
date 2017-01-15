@@ -1,0 +1,31 @@
+.privacy {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+
+  @include e('container') {
+    @extend .container;
+  }
+
+  @include e('content') {
+    @extend .col-md-6;
+    @extend .col-md-offset-3;
+    @extend .col-sm-8;
+    @extend .col-sm-offset-2;
+    margin-top: 20px;
+  }
+
+  @include e('title') {
+    font-size: 2.6rem;
+  }
+
+  @include e('text') {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+
+}
